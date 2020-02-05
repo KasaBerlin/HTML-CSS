@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>form1</title>
+</head>
+<body>
+    <form action="https://formspree.io/katrinsalac@gmail.com" method="POST">
+<fieldset>
+  <legend>Your Details:</legend>
+      <div>
+      <label>Name:<input type="text" name="name" required></label><br>
+      <label>Email:<input type="email" name="email" required></label>
+      </div>  
+</fieldset>
+<fieldset>
+  <legend>Your Review:</legend>
+        <p><label>How did you hear about us?
+        <select name="connect-from">
+                      <option>google</option>
+                      <option>twitter</option>
+                      <option>facebook</option>
+                  </select></label></p>
+          <p><label>Would you visit again? <br>
+          <input type="radio" name="visit-again" value="Yes">Yes
+          <input type="radio" name="visit-again" value="No">No
+          <input type="radio" name="visit-again" value="Maybe">Maybe</label></p>
+          <div><Label for="comments">Comments:</Label> <br>
+          <textarea id="comments" name="comments" cols="50" rows="5"></textarea></div>
+          <div><label><input type="checkbox" name="newsletter">
+            Sign me up for email updates</label></div>
+          <input type="submit" value="submit review">
+        </fieldset>        
+      </form>
+</body>
+</html>

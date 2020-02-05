@@ -1,0 +1,89 @@
+/* Resets */
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 24px;
+  color: #e8ecef;
+  background-color: #0e2431;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Layout */
+
+.container {
+  margin: 0 auto;
+  max-width: 1600px; /* 4 x image */
+}
+
+/* Description */
+
+.description {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+h1 {
+  display: inline-block;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  border-bottom: 4px solid #f4d143;
+}
+
+
+/* Gallery */
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Keep image proportions on resize */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*
+When there's room for more than 1 column of 400px-wide images,
+change the layout of the gallery to show 2 columns
+*/
+@media screen and (min-width: 400px) {
+
+  ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: 50%
+  }
+}
+
+/*
+When there's room for more than 2 columns,
+change the layout of the gallery to show 3 columns
+*/
+@media screen and (min-width: 600px) {
+  li {
+    width: calc(100% / 3);
+  }
+}
+
+/*
+When there's room for more than 3 columns,
+change the layout of the gallery to show 4 columns
+*/
+@media screen and (min-width: 800px) {
+  li {
+    width: 25%;
+  }
+}

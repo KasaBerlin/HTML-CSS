@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 40%;
+  height: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows: repeat (11, 1fr);
+  grid-gap: 1%;
+}
+div {
+  background-color: yellow;
+}
+.info {
+  grid-area: 1 / 1 / 1 / 4;
+}
+.info nav {
+  display: flex;
+  justify-content: space-between;
+  height: 70%;
+  padding: 0 2% 0 2%;
+}
+.picture {
+  grid-area: 2 / 1 / 4 / 2;
+  width: 90%;
+  height: 90%;
+  background-image: url(images/man-tree-nature-leaf-trunk-profile-483981-pxhere.com.jpg);
+  border-radius: 50%;
+  border: 2px rgb(170, 72, 72) solid;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.table {
+  grid-area: 2 / 2 / 2 / 4;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+ul {
+  align-self: center;
+  text-align: center;
+}
+li {
+  display: inline;
+  text-align: justify;
+}
+.nav2 {
+  grid-area: 3 / 2 / 3 / 4;
+  display: flex;
+  justify-content: center;
+}
+input {
+  background-color: #4caf50;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.big {
+  height: 50%;
+  width: 70%;
+}
+.small {
+  height: 50%;
+  width: 13%;
+}
+.text {
+  grid-area: 4 / 1 / 6 / 4;
+}
+.nav3 {
+  grid-area: 6 / 1 / 6 / 4;
+}
+.nav4 {
+  grid-area: 7 / 1 / 7 / 4;
+}
+.picturewheel {
+  grid-area: 8 / 1 / 11 / 4;
+}
+.footer {
+  grid-area: 11 / 1 / 11 / 4;
+}

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,900");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0 auto;
+  background-image: url(images/sand-white-texture-wave-floor-pattern-1197626-pxhere.com.jpg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Playfair Display", serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.main {
+  margin: 0 auto;
+  height: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+q,
+nav a,
+iframe {
+  width: 100%;
+  height: 100%;
+}
+.box {
+  flex: initial;
+  width: 23em;
+  height: 11em;
+  border: 10px solid black;
+  background-color: rgba(183, 210, 226, 0.2);
+  padding: 1em;
+  margin: 1em;
+  font-size: 1.1em;
+  overflow: auto;
+}
+.navbar {
+  flex-basis: 53%;
+  padding-bottom: 1em;
+}
+nav a,
+a {
+  display: block;
+  font-size: 1.4em;
+  text-decoration: none;
+  line-height: 3em;
+  color: black;
+  letter-spacing: 1em;
+  padding-left: 2px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.slogan {
+  /* font-size: 0.1em; */
+  text-align: center;
+  border: 10px solid black;
+  background-color: transparent;
+  /* line-height: 0.9em; */
+}
+.logo {
+  border: 10px solid transparent;
+  text-align: center;
+  /* line-height: 100%; */
+  background-color: transparent;
+  /* height: 10em; */
+}
+q {
+  display: block;
+  text-align: left;
+  text-indent: 5em;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}
+input {
+  background-color: black;
+  color: white;
+  padding: 0.4em;
+  font-family: "Playfair Display", serif;
+}
+@media (max-width: 786px) {
+  .main {
+    display: block;
+  }
+  .box {
+    overflow: scroll;
+  }
+  footer {
+    display: none;
+  }
+}

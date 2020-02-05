@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+</head>
+<body>
+ 
+        <h1>Poetry Workshop</h1>
+        <p id=intro>We will be conducted a number pf poetry workshops and symposiums throughout the year. </p>
+        <p>Please note that the following events are free to members:</p>
+        <ul>
+          <li>A Poetic Perspective</li>
+          <li>Walt Whitman at War</li>
+          <li>Found Poems and Outsider Poetry</li>
+        </ul>
+        <table>
+          <tr id="firstrow">
+          <th id="first"></th>
+          <th>New York</th>
+          <th>Chicago</th>
+          <th id="last">San Francisco</th>
+          </tr>
+          <tr class="row">
+            <th>A Poetic Perspective</th>
+            <td>Sat, 4 Feb 2012<br>11am-2pm</td>
+          <td>Sat, 3 Mar 2012<br>11am-2pm</td>
+          <td>Sat, 17 Mar 2012<br>11am-2pm</td>
+          </tr>
+            <tr class="row">
+            <th>Walt Whitman at War</th>
+            <td>Sat, 7 Apr 2012<br>11am-1pm</td>
+          <td>Sat, 5 May 2012<br>11am-1pm</td>
+          <td>Sat, 19 May 2012<br>11am-1pm</td>
+          </tr>
+              <tr class="row">
+            <th>Found Poems & Outsider Poetry</th>
+            <td>Sat, 9 Jun 2012<br>11am-2pm</td>
+          <td>Sat, 7 Jul 2012<br>11am-2pm</td>
+          <td>Sat, 21 Jul 2012<br>11am-2pm</td>
+          </tr>
+              <tr class="row">
+            <th>Natural Death: An Exploration</th>
+            <td>Sat, 4 Aug 2012<br>11am-4pm</td>
+          <td>Sat, 8 Sep 2012<br>11am-4pm</td>
+          <td>Sat, 15 Sep 2012<br>11am-4pm</td>
+          </tr>
+        </table>
+        <form action="https://formspree.io/katrinsalac@gmail.com" method="POST">
+        <fieldset> 
+          <legend><i>Register your interest</i></legend>
+        <ul class="label"> 
+        <li><label for="name">Your name:</label></li>
+        <li><label for="email">Your email:</label></li>
+        <li><label for="center">Your closest center:</label></li>
+        <li><label for="radio">Are you a member?</label></li>
+        </ul>
+        <ul class="input">
+        <li><input id="name" type="text" size="15" maxlength="30" name="name" required></li>
+        <li><input id="email" type="text" size="15" maxlength="30" name="email" required></li>
+        <li><select id="center" name="center">
+                <option>New York</option>
+                      <option>Chicago</option>
+                      <option>San Francisco</option>
+        </select></li>
+        <li><input id="radio" type="radio" name="membership" value="yes">Yes
+        <input type="radio" name="membership" value="No">No</li>
+      </ul>
+        </fieldset>
+        <input type="submit" value="Register">
+        </form>
+</body>
+</html>
