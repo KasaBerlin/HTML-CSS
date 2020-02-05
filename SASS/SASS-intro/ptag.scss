@@ -1,0 +1,36 @@
+main {
+  margin: 0.5rem;
+  .huge {
+    font-family: $font-stack;
+    font-size: 10rem;
+    color: $primary-color;
+  }
+  .big {
+    font-family: $font-stack;
+    font-size: 8rem;
+    color: $primary-color;
+  }
+  .medium {
+    font-family: $font-stack;
+    font-size: 3rem;
+    color: purple;
+  }
+  .middle {
+    font-family: $font-stack;
+    font-size: 3rem;
+    color: purple;
+  }
+
+  .small {
+    font-family: $font-stack;
+    font-size: 2rem;
+    color: green;
+  }
+
+  .tiny {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 0.5rem;
+    color: green;
+    margin-bottom: 2rem;
+  }
+}

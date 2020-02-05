@@ -1,0 +1,40 @@
+@media screen and (min-width: 768px) {
+  body {
+    width: 70%;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    li {
+      padding-left: 5%;
+    }
+  }
+  .card {
+    display: flex;
+    .card-text {
+      width: 170%;
+      margin-left: 2%;
+      .img,
+      .card-text {
+        height: 100%;
+      }
+    }
+  }
+  main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    width: 100%;
+    article,
+    aside {
+      margin: 0;
+      padding: 2%;
+      height: auto;
+    }
+    article p {
+      width: 50vh;
+    }
+    aside p {
+    }
+  }
+}

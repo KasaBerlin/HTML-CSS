@@ -1,0 +1,6 @@
+div {
+  background-color: salmon; }
+  div p {
+    color: hotpink;
+    text-align: center;
+    letter-spacing: 5px; }

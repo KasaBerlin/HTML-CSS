@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis|Slabo+27px");
+@media screen and (max-width: 600px) {
+  * {
+    display: block; }
+  img {
+    width: 100%; } }
+
+* {
+  font-family: "Slabo 27px", serif;
+  font-size: 20px; }
+
+.card {
+  border: 5px double teal;
+  width: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+  .card button {
+    align-self: center;
+    width: 50%;
+    background-color: yellow; }
+    .card button:hover {
+      border: 2px solid black; }

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis|Slabo+27px");
+@mixin flex {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+$border-color: teal;
+$primary-color: yellow;
+$secondary-color: coral;
+$third-color: orange;
+$font-stack: "Slabo 27px", serif;
+$second-font: "Dosis", sans-serif;
+$font-big: 20px;
+$font-small: 15px;
+
+@media screen and (max-width: 600px) {
+  * {
+    display: block;
+  }
+  img {
+    width: 100%;
+  }
+}
+* {
+  font-family: $font-stack;
+  font-size: $font-big;
+}
+.card {
+  border: 5px double $border-color;
+  width: 70%;
+  @include flex;
+  button {
+    align-self: center;
+    width: 50%;
+    background-color: $primary-color;
+    &:hover {
+      border: 2px solid black;
+    }
+  }
+}

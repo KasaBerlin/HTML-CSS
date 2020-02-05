@@ -1,0 +1,25 @@
+$background-color: #e0ddb2;
+$border-color: #dad6ab;
+$navfooter-color: #016690;
+
+@mixin flex {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+@mixin box {
+  height: 100%;
+  margin: 5%;
+  padding: 5%;
+}
+@mixin navcolor {
+  a {
+    color: $navfooter-color;
+  }
+}
+@mixin footer {
+  background-color: $navfooter-color;
+  a {
+    color: white;
+  }
+}

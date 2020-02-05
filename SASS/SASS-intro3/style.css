@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: arial; }
+
+body {
+  width: 400px;
+  height: auto;
+  margin: 0 auto; }
+
+nav,
+footer {
+  line-height: 4em;
+  font-size: 1.2em; }
+  nav ul,
+  footer ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none; }
+    nav ul li,
+    footer ul li {
+      display: inline-block; }
+      nav ul li a,
+      footer ul li a {
+        text-decoration: none; }
+
+nav a a {
+  color: #016690; }
+
+footer {
+  background-color: #016690; }
+  footer a {
+    color: white; }
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background: url("images_website/header.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.card {
+  background: #e0ddb2;
+  height: 100%;
+  margin: 5%;
+  padding: 5%; }
+  .card .img {
+    width: 100%;
+    height: 200px; }
+
+.img-mountain {
+  background-image: url("images_website/mountain.jpg"); }
+
+.img-surfer {
+  background-image: url("images_website/surfer.jpg"); }
+
+.img-tree {
+  background-image: url("images_website/tree.jpg"); }
+
+aside {
+  height: 100%;
+  margin: 5%;
+  padding: 5%;
+  border: 2px solid #dad6ab; }
+
+article {
+  height: 100%;
+  margin: 5%;
+  padding: 5%; }
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 70%; }
+  nav ul {
+    display: flex;
+    justify-content: flex-end; }
+    nav ul li {
+      padding-left: 5%; }
+  .card {
+    display: flex; }
+    .card .card-text {
+      width: 170%;
+      margin-left: 2%; }
+      .card .card-text .img,
+      .card .card-text .card-text {
+        height: 100%; }
+  main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    width: 100%; }
+    main article,
+    main aside {
+      margin: 0;
+      padding: 2%;
+      height: auto; }
+    main article p {
+      width: 50vh; } }

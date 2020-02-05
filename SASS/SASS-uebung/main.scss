@@ -1,0 +1,14 @@
+@import "variables";
+
+@mixin center {
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+div {
+  background-color: $main-color;
+  p {
+    color: $secondary-color;
+    @include center;
+  }
+}

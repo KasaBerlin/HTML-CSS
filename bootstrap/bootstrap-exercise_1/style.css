@@ -1,0 +1,16 @@
+.container-fluid {
+  background-color: rgb(69, 219, 219);
+  height: 200px;
+}
+h1,
+p {
+  height: 50%;
+}
+ul {
+  background-color: lightgray;
+}
+ul li a {
+  line-height: 50px;
+  text-decoration: none;
+  color: grey;
+}
